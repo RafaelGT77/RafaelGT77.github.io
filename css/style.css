@@ -1,0 +1,229 @@
+/* Estilos generales inspirados en "El Globo" */
+:root {
+    --color-primary: #D4A76A; /* Dorado/marré como "El Globo" */
+    --color-secondary: #8B4513; /* Marrón oscuro */
+    --color-light: #FFF8E1; /* Beige claro */
+    --color-dark: #5D4037; /* Marrón casi negro */
+    --font-title: 'Playfair Display', serif; /* Elegante como "El Globo" */
+    --font-text: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--color-dark);
+    background-color: #f9f5f0; /* Fondo claro y cálido */
+    line-height: 1.6;
+}
+
+/* Navbar - Estilo clásico y sofisticado */
+.navbar {
+    background-color: var(--color-dark) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--color-primary) !important;
+}
+
+.nav-link {
+    color: var(--color-light) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Hero Section - Portada destacada */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/portada-panaderia.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+    background-color: var(--color-primary);
+    border: none;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+}
+
+/* Catálogo de productos - Estilo carta de restaurante */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.btn-warning {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+}
+
+/* Carrito de compras - Estilo limpio */
+#carrito-items .card {
+    border: 1px solid #eee;
+}
+
+#carrito-items .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+#total {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+/* Checkout - Formulario elegante */
+.form-pedido {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.25rem rgba(212, 167, 106, 0.25);
+}
+
+#btn-whatsapp {
+    background-color: #25D366;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Footer - Estilo discreto */
+footer {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* Animaciones CSS para complementar el JS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease-out;
+}
+
+.slide-in-left.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease-out;
+}
+
+.slide-in-right.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Efecto 3D para cards */
+.card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto parallax */
+.hero-section {
+    background-attachment: fixed;
+}

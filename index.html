@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Artesanal | A Domicilio en La Laguna</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .badge-cobertura {
+            background-color: #D4A76A;
+            font-size: 0.9rem;
+        }
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-birthday-cake me-2"></i>Repostería Delicia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Repostería Artesanal a Domicilio</h1>
+            <p class="lead mb-4">¡Pedidos para toda la Comarca Lagunera!</p>
+            <span class="badge badge-cobertura rounded-pill mb-3">Torreón • Gómez Palacio • Lerdo</span>
+            <div>
+                <a href="https://wa.me/528715769412" class="btn btn-success btn-lg me-2">
+                    <i class="fab fa-whatsapp me-2"></i>Pedir por WhatsApp
+                </a>
+                <a href="productos.html" class="btn btn-outline-light btn-lg">Ver Catálogo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección "Cómo funciona" -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Cómo pedir?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4">
+                        <i class="fas fa-list-alt fa-3x text-primary mb-3"></i>
+                        <h3>1. Elige</h3>
+                        <p>Selecciona tus productos favoritos del catálogo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4">
+                        <i class="fas fa-phone-alt fa-3x text-primary mb-3"></i>
+                        <h3>2. Confirma</h3>
+                        <p>Envía tu pedido por WhatsApp al <strong>871-576-9412</strong>.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4">
+                        <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                        <h3>3. Recibe</h3>
+                        <p>Te entregamos en tu domicilio.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted text-center">*Sujeto a disponibilidad y zona.</p>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Lo más pedido</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/pastel-chocolate.jpg" class="card-img-top" alt="Pastel de Chocolate">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pastel de Chocolate</h3>
+                            <p class="text-muted">Desde S/ 180 (20 porciones)</p>
+                            <a href="productos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/galletas-decoradas.jpg" class="card-img-top" alt="Galletas Decoradas">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Galletas Personalizadas</h3>
+                            <p class="text-muted">S/ 25 (por docena)</p>
+                            <a href="productos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/pan-dulce.jpg" class="card-img-top" alt="Pan Dulce">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pan Dulce Artesanal</h3>
+                            <p class="text-muted">S/ 8 (por pieza)</p>
+                            <a href="productos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="h5"><i class="fas fa-birthday-cake me-2"></i>Repostería Delicia</h3>
+                    <p class="mb-1">Emprendimiento familiar de repostería fina a domicilio.</p>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>Servicio en toda La Laguna</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3 class="h5">Contacto Directo</h3>
+                    <p class="mb-1"><i class="fab fa-whatsapp me-2"></i> <a href="https://wa.me/528715769412" class="text-white">871-576-9412</a></p>
+                    <p class="mb-0"><i class="fas fa-clock me-2"></i> Pedidos: 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="text-center mb-0 small">&copy; 2025 Repostería Delicia - Todos los pedidos son bajo previo encargo.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/528715769412" class="whatsapp-fixed btn btn-success btn-lg rounded-circle shadow">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+<script src="js/animaciones.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
